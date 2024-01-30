@@ -61,6 +61,10 @@ const app = createApp({
         this.nextClick();
       }, 3000);
     },
+
+    stopAutoplay() {
+      clearInterval(this.autoPlay);
+    },
   },
 
   mounted() {
