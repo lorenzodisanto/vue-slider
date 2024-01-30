@@ -51,6 +51,10 @@ const app = createApp({
         this.activeSlide--;
       }
     },
+
+    thumbClick(index) {
+      this.activeSlide = index;
+    },
   },
 });
 app.mount("#app");
