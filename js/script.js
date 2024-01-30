@@ -55,6 +55,16 @@ const app = createApp({
     thumbClick(index) {
       this.activeSlide = index;
     },
+
+    setAutoplay() {
+      this.autoPlay = setInterval(() => {
+        this.nextClick();
+      }, 3000);
+    },
+  },
+
+  mounted() {
+    this.setAutoplay();
   },
 });
 app.mount("#app");
