@@ -12,7 +12,11 @@
     <div id="app">
       <div class="container">
         <div class="slider-wrapper">
-          <div class="item">
+          <div
+            class="item"
+            @mouseover="stopAutoplay()"
+            @mouseleave="setAutoplay()"
+          >
             <img :src="slides[activeSlide].image" alt="slide" />
             <div class="text">
               <h3>{{ slides[activeSlide].title}}</h3>
