@@ -27,6 +27,7 @@
               class="thumb"
               v-for="(url, index) in slides"
               :class="index == activeSlide ? 'active' : ''"
+              @click="thumbClick(index)"
             >
               <img :src="url.image" />
             </div>
