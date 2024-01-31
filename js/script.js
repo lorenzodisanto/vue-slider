@@ -4,6 +4,7 @@ const app = createApp({
   data() {
     return {
       activeSlide: 0,
+      autoPlay: false,
 
       slides: [
         {
